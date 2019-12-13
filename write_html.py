@@ -762,11 +762,14 @@ if __name__ == '__main__':
     parser.add_argument('--min-score', default=0, help='limit post rendering, default 0')
     parser.add_argument('--min-comments', default=0, help='limit post rendering, default 0')
     parser.add_argument('--hide-deleted-comments', action='store_true', help='exclude deleted and removed comments where possible')
+    parser.add_argument('--number-of-days', help='Specify how many days to fetch since today')
     args=parser.parse_args()
 
     hide_deleted_comments = False
     if args.hide_deleted_comments:
         hide_deleted_comments = True
+    if args.number_of_days is not None:
+        start_date = datetime.today().date() - timedelta(days=int(args.number_of_days))
 
     args.min_score = int(args.min_score)
     args.min_comments = int(args.min_comments)

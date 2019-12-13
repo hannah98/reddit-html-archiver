@@ -1,0 +1,11 @@
+screenshots
+data
+r
+.git
+.gitignore
+Dockerfile
+README.md
+run.sh
+build.sh
+html
+.dockerignore

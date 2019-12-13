@@ -1,0 +1,3 @@
+machine surge.surge.sh
+    login EMAIL
+    password PASS_KEY
