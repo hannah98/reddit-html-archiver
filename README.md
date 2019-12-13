@@ -1,5 +1,7 @@
 ## reddit html archiver
 
+> **Note:*** This is a fork from [libertysoft3/reddit-html-archiver](https://github.com/libertysoft3/reddit-html-archiver).  This fork addresses my specific needs of Docker support, limiting the number of days written to html, and the ability to push the html to surge.sh - You should visit [libertysoft3/reddit-html-archiver](https://github.com/libertysoft3/reddit-html-archiver) first.
+
 pulls reddit data from the [pushshift](https://github.com/pushshift/api) api and renders offline compatible html pages. uses the reddit markdown renderer.
 
 ### install
